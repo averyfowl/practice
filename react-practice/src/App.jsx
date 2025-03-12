@@ -1,17 +1,21 @@
 import { useState } from 'react'
-
+import Navbar from './components/Navbar/'
+import Main from './components/Main/'
+import Footer from './components/Footer'
 
 function App() {
 
-  const username = "Aves F"
+
+ 
   
-  const userStyles = {
-    backgroundColor: "green",
-    color: "white"
-  }
 
   return (
-    <h1 style = {userStyles}>Welcome, {username}</h1>
+    <div className = "app">
+    <Navbar />
+    <Main/>
+    <Footer/>
+       
+    </div>
   )
 }
 
