@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+.app {
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  background: white;
+  font-family:"Open Sans", system-ui;
+  color: black;
+}
+.header1 {
+  position: relative;
+  background-image: url("https://startbootstrap.github.io/startbootstrap-clean-blog/assets/img/home-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 60vh;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+.header1::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); 
+  z-index: 1; 
+}
+.header1 >h1{
+  font-size: 80px;
+  font-weight: bolder;
+  position: relative;
+  z-index: 2;
+}
+.header1 >h3{
+  position: relative;
+  z-index: 2;
+  font-size: 1.2rem;
+  font-weight: normal;
+}
+.navbar {
+  height: 7vh;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  background: white;
+
+}
+  .navbar-list {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+}
+.blogPost {
+  background-color: #ffffff;
+  padding: 40px;
+  margin-right:auto;
+  margin-left: auto;
+  width: 70%;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid rgb(207, 205, 205);
+  text-align: left;
+}
+
+.blogPost h2 {
+  font-weight: bolder;
+  margin: 0;
+  font-size: 1.9rem;
+  color: #333;
+}
+
+.blogPost h6 {
+  margin: 5px 0;
+  font-size: 1.2rem;
+  font-weight: normal;
+  color: #282828;
+}
+
+.blogPost p {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: #444;
+  font-style: italic;
+}
+.footer {
+  
+      padding: 10px;
+      bottom: 0;
+      width: 100%;
+      height: 15vh;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      background:white;
+      border-top: 1px solid rgb(199, 199, 199);
+}
